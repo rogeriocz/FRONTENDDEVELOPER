@@ -12,11 +12,11 @@
     body {
         margin: 0px;
         font-family: 'Mulish', sans-serif;
-        background-color: #AB88FF;
+        background-color: #8F57FD;
     }
 
     header {
-        background-color: #AB88FF;
+        background-color: #8F57FD;
         width: 100%;
         height: 80px;
         display: flex;
@@ -66,14 +66,36 @@
         display: flex;
         align-items: center;
     }
-    .header__menu--profile img{
+
+    .header__menu--profile img {
         margin-right: 8px;
         width: 40px;
     }
-    .header__menu--profile p{
+
+    .header__menu--profile p {
         margin: 0px;
         color: whitesmoke;
     }
+    .main {
+        height: 300px;
+    }
+    .main__title {
+        color: whitesmoke;
+        font-size: 25px;
+    }
+    .input {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid white;
+        border-radius: 25px;
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        outline: none;
+        padding: 0px 20px;
+        width: 70%;
+    }
+    ::placeholder
 </style>
 
 <body>
@@ -83,7 +105,7 @@
             alt="platziVideo">
         <div class="header__menu">
             <div class="header__menu--profile">
-                <img src="./userc.png" alt="user">
+                <img src="./icons/userc.png" alt="user">
                 <p>Perfil</p>
             </div>
             <ul>
@@ -92,6 +114,10 @@
             </ul>
         </div>
     </header>
+    <section class="main">
+        <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
 </body>
 
 </html>
