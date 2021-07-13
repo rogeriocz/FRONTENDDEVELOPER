@@ -10,7 +10,7 @@
 </head>
 <style>
     body {
-        margin: 0;
+        margin: 0px;
         font-family: 'Mulish', sans-serif;
         background-color: #AB88FF;
     }
@@ -21,6 +21,7 @@
         height: 80px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header__img {
@@ -29,7 +30,7 @@
     }
 
     .header__menu {
-        margin-right: 60px;
+        margin-right: 30px;
     }
 
     .header__menu ul {
@@ -56,10 +57,22 @@
         text-decoration: none;
     }
 
+    .header__menu li a:hover {
+        text-decoration: underline;
+    }
+
     .header__menu--profile {
         margin-right: 8px;
-        width: 40px;
         display: flex;
+        align-items: center;
+    }
+    .header__menu--profile img{
+        margin-right: 8px;
+        width: 40px;
+    }
+    .header__menu--profile p{
+        margin: 0px;
+        color: whitesmoke;
     }
 </style>
 
